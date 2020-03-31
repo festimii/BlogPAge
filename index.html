@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="Style/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Festim Beqiri</title>
+    <link rel="icon" type="image" href="pic/hacker.png" />
+  </head>
+  <body>
+    <!--       MAIN       -->
+    <div id="container">
+      <div class="navT">
+        <div class="icon"></div>
+      </div>
+      <div class="videoback">
+        <video autoplay muted loop id="myVideo">
+          <source src="./vid/Cassette_Tape.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div id="menu">
+        <ul>
+          <li>
+            <a href="index.html">Hom<span class="space">e</span></a>
+          </li>
+          <li>
+            <a href="about.html">Abou<span class="space">t</span></a>
+          </li>
+
+          <li>
+            <a href="blog.html">Blo<span class="space">g</span></a>
+          </li>
+          <li>
+            <a href="contact.html">Contac<span class="space">t</span></a>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        class="welcome"
+        style="left: 50%;margin-right: 50%;top: 50%;bottom: 50%;"
+      >
+        WELCOME
+      </div>
+    </div>
+    <!--              NaV                 -->
+    <script>
+      $(".navT").on("click", function() {
+        $(this).toggleClass("active");
+        $("#menu").toggleClass("open");
+        $(".content").toggleClass("shift");
+      });
+    </script>
+    <p hidden>Copyright|FestimBeqiri|2018</p>
+    <!--- Audio <audio src="vid/Evil Laugh.mp3" autoplay loop></audio>--->
+  </body>
+</html>

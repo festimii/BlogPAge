@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                <link rel="stylesheet" href="Style/about.css">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <title>Festim Beqiri</title>
+                <link rel="icon" type="image" href="pic/hacker.png">
+        </head>
+<body>
+        <div id="container">
+                <div class="navT">
+                  <div class="icon"></div>
+                </div>
+               
+                <div id="menu">
+                  <ul>
+                    <li><a href="index.html">Hom<span class="space">e</span></a></li>
+                    <li><a href="about.html">Abou<span class="space">t</span></a></li>
+                    
+                    <li><a href="blog.html">Blo<span class="space">g</span></a></li>
+                    <li><a href="contact.html">Contac<span class="space">t</span></a></li>
+                  </ul>
+                </div>
+
+        <div class="content">
+                <div class="card" style="padding-right: 0px;right: 8px;margin-right: -23px;">
+                  <div class="firstinfo"><img src="./pic/91438322_2843405685754010_7400007361408008192_n.jpg">
+                    <div class="profileinfo">
+                    
+                      <h1>Festim Beqiri</h1>
+                      <h3>Festim Beqiri</h3>
+                      <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos illo recusandae delectus. Placeat, ea hic debitis eius aspernatur similique sit iure voluptatibus dolores, ad veniam itaque consequuntur dolore obcaecati eveniet.</p>
+                      <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam sequi, alias neque nesciunt eligendi assumenda saepe odio, voluptatem tenetur enim quia laborum suscipit debitis quos odit fuga consequatur. Voluptate, aut.</p>
+                      <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius temporibus minima officiis nisi amet modi? Corporis illum corrupti accusantium recusandae perspiciatis? Doloremque laborum sunt atque ratione, repellendus illo qui omnis?</p>
+                      <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis neque earum temporibus vitae accusantium libero repudiandae totam, eius illum veniam et harum cupiditate fugit eum optio ut. Eveniet, non amet!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--                      Nav                       -->
+        <script>
+                $(".navT").on("click", function() {
+            $(this).toggleClass("active");
+            $("#menu").toggleClass("open");
+            $(".content").toggleClass("shift");
+          });
+              </script>
+</body>
+</html>
