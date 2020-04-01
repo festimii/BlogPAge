@@ -97,6 +97,7 @@ body,
 
 #menu ul li a {
   color: white;
+  text-decoration: none;
 }
 #menu li {
   -webkit-transition: all 0.2s;

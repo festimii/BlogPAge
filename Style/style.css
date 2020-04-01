@@ -15,6 +15,7 @@ body {
   min-width: 100%;
   min-height: 100%;
   width: min-content;
+  background-size: 100%;
 }
 .welcome {
   font-size: 57.6px;
@@ -250,6 +251,7 @@ body {
 
 #menu ul li a {
   color: white;
+  text-decoration: none;
 }
 #menu li {
   -webkit-transition: all 0.2s;
