@@ -574,6 +574,8 @@ textarea {
 }
 
 #container {
+  margin: 0 auto;
+  padding-top: 4.5em;
   max-width: 768px;
 }
 
@@ -681,6 +683,14 @@ textarea {
 
 :-ms-input-placeholder {
   color: #fff;
+}
+#contact_form {
+  margin: 0 auto;
+}
+@media screen and (max-width: 600px) {
+  #contact_form {
+    width: 75%;
+  }
 }
 
 #form_button {

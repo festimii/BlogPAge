@@ -32,7 +32,7 @@
           </li>
         </ul>
       </div>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br />
+
       <div class="stage">
         <div class="wrapper">
           <div class="slash"></div>
@@ -54,7 +54,6 @@
         </div>
       </div>
     </div>
-    <br /><br /><br /><br /><br />
 
     <div id="container">
       <div class="underline"></div>
@@ -129,7 +128,7 @@
 
     <!--                      Nav                       -->
     <script>
-      $(".navT").on("click", function() {
+      $(".navT").on("click", function () {
         $(this).toggleClass("active");
         $("#menu").toggleClass("open");
         $(".content").toggleClass("shift");
@@ -154,19 +153,19 @@
         );
       }
 
-      $(function() {
+      $(function () {
         captchaCode();
 
-        $("#contactForm").submit(function() {
+        $("#contactForm").submit(function () {
           var captchaVal = $("#code").text();
           var captchaCode = $(".captcha").val();
           if (captchaVal == captchaCode) {
             $(".captcha").css({
-              color: "#609D29"
+              color: "#609D29",
             });
           } else {
             $(".captcha").css({
-              color: "#CE3B46"
+              color: "#CE3B46",
             });
           }
 
@@ -174,11 +173,11 @@
           var emailText = $(".email").val();
           if (emailFilter.test(emailText)) {
             $(".email").css({
-              color: "#609D29"
+              color: "#609D29",
             });
           } else {
             $(".email").css({
-              color: "#CE3B46"
+              color: "#CE3B46",
             });
           }
 
@@ -186,22 +185,22 @@
           var nameText = $(".name").val();
           if (nameFilter.test(nameText)) {
             $(".name").css({
-              color: "#609D29"
+              color: "#609D29",
             });
           } else {
             $(".name").css({
-              color: "#CE3B46"
+              color: "#CE3B46",
             });
           }
 
           var messageText = $(".message").val().length;
           if (messageText > 50) {
             $(".message").css({
-              color: "#609D29"
+              color: "#609D29",
             });
           } else {
             $(".message").css({
-              color: "#CE3B46"
+              color: "#CE3B46",
             });
           }
 
@@ -230,7 +229,7 @@
     <!--                     FEstimB                       -->
     <script>
       var curry = function curry(f) {
-        return function() {
+        return function () {
           for (
             var _len = arguments.length, args = Array(_len), _key = 0;
             _key < _len;
@@ -250,7 +249,7 @@
       };
 
       var compose = function compose(f, g) {
-        return function(x) {
+        return function (x) {
           return f(g(x));
         };
       };
@@ -267,7 +266,7 @@
         }
         window.CP.exitedLoop(2);
 
-        return function() {
+        return function () {
           for (
             var _len3 = arguments.length, args = Array(_len3), _key3 = 0;
             _key3 < _len3;
@@ -280,7 +279,7 @@
           }
           window.CP.exitedLoop(3);
 
-          return fns.reverse().reduce(function(x, f) {
+          return fns.reverse().reduce(function (x, f) {
             return f.apply(f, [].concat(x));
           }, args);
         };
