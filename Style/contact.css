@@ -689,6 +689,7 @@ textarea {
 }
 @media screen and (max-width: 600px) {
   #contact_form {
+    margin: -10px 0 0 28px;
     width: 75%;
   }
 }
