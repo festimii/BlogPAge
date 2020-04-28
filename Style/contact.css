@@ -1,5 +1,6 @@
 html,
 body * {
+  margin-bottom: 0px;
   box-sizing: border-box;
   font-family: "Titillium Web", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -686,6 +687,7 @@ textarea {
 }
 #contact_form {
   margin: 0 auto;
+  padding-top: 40px;
 }
 @media screen and (max-width: 600px) {
   body {
@@ -695,6 +697,10 @@ textarea {
   #contact_form {
     margin: -10px 0 0 28px;
     width: 75%;
+    font-size: 0.865em;
+  }
+  .wrapper {
+    font-size: 1.5rem;
   }
 }
 
@@ -718,7 +724,7 @@ textarea {
 }
 
 #form_button:hover {
-  background: #fff;
+  background: #0000008c;
   color: #f2f3eb;
 }
 
