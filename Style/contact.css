@@ -688,6 +688,10 @@ textarea {
   margin: 0 auto;
 }
 @media screen and (max-width: 600px) {
+  body {
+    width: 387px;
+    max-height: 700px;
+  }
   #contact_form {
     margin: -10px 0 0 28px;
     width: 75%;
